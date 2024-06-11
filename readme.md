@@ -10,5 +10,4 @@ Follow the steps in this section to setup basic installation and IDE setup.
 
 ## Day wise lessons and code sample
 
-- [Start Day 1](/Day%201/)
-- [Start Day 2](/Day%202/)
+- Day 1 - 
