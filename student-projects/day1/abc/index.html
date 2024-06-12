@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .note-form {
+            margin-bottom: 20px;
+        }
+        .note-form input[type="text"],
+        .note-form input[type="search"] {
+            width: calc(100% - 80px);
+            padding: 10px;
+            font-size: 16px;
+        }
+        .note-form button {
+            width: 60px;
+            padding: 10px;
+            font-size: 16px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .note-form button:hover {
+            background: #218838;
+        }
+        .note-list {
+            list-style: none;
+            padding: 0;
+        }
+        .note-item {
+            background: #fafafa;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .note-item button {
+            background: #dc3545;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .note-item button:hover {
+            background: #c82333;
+        }
+        .edit-button {
+            background: #ffc107;
+            color: white;
+            margin-right: 10px;
+        }
+        .edit-button:hover {
+            background: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Note Taking App</h1>
+        <div class="note-form">
+            <input type="text" id="note-input" placeholder="Enter your note here...">
+            <button id="add-note-button">Add</button>
+        </div>
+        <div class="note-form">
+            <input type="search" id="search-input" placeholder="Search notes...">
+        </div>
+        <ul class="note-list" id="note-list">
+            <!-- Notes will be appended here -->
+        </ul>
+    </div>
+
+    <script src="script.js">
+        let notes = [];
+
+    </script>
+</body>
+</html>
